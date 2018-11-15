@@ -9,4 +9,20 @@
 /Users/ludwigroger/CLionProjects/rc4/main.cpp
 iostream
 -
+src/RC4.h
+/Users/ludwigroger/CLionProjects/rc4/src/RC4.h
+stdio.h
+/Users/ludwigroger/CLionProjects/rc4/stdio.h
+string
+-
+
+/Users/ludwigroger/CLionProjects/rc4/src/RC4.h
+iostream
+-
+stdio.h
+/Users/ludwigroger/CLionProjects/rc4/src/stdio.h
+stdlib.h
+/Users/ludwigroger/CLionProjects/rc4/src/stdlib.h
+string
+-
 

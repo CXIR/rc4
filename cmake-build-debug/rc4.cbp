@@ -83,10 +83,10 @@
 		<Unit filename="/Users/ludwigroger/CLionProjects/rc4/main.cpp">
 			<Option target="rc4"/>
 		</Unit>
-		<Unit filename="/Users/ludwigroger/CLionProjects/rc4/src/cipher.h">
+		<Unit filename="/Users/ludwigroger/CLionProjects/rc4/src/RC4.cpp">
 			<Option target="rc4"/>
 		</Unit>
-		<Unit filename="/Users/ludwigroger/CLionProjects/rc4/src/decipher.h">
+		<Unit filename="/Users/ludwigroger/CLionProjects/rc4/src/RC4.h">
 			<Option target="rc4"/>
 		</Unit>
 		<Unit filename="/Users/ludwigroger/CLionProjects/rc4/CMakeLists.txt">

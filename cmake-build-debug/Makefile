@@ -150,6 +150,33 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles/rc4.dir/build.make CMakeFiles/rc4.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+src/RC4.o: src/RC4.cpp.o
+
+.PHONY : src/RC4.o
+
+# target to build an object file
+src/RC4.cpp.o:
+	$(MAKE) -f CMakeFiles/rc4.dir/build.make CMakeFiles/rc4.dir/src/RC4.cpp.o
+.PHONY : src/RC4.cpp.o
+
+src/RC4.i: src/RC4.cpp.i
+
+.PHONY : src/RC4.i
+
+# target to preprocess a source file
+src/RC4.cpp.i:
+	$(MAKE) -f CMakeFiles/rc4.dir/build.make CMakeFiles/rc4.dir/src/RC4.cpp.i
+.PHONY : src/RC4.cpp.i
+
+src/RC4.s: src/RC4.cpp.s
+
+.PHONY : src/RC4.s
+
+# target to generate assembly for a file
+src/RC4.cpp.s:
+	$(MAKE) -f CMakeFiles/rc4.dir/build.make CMakeFiles/rc4.dir/src/RC4.cpp.s
+.PHONY : src/RC4.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -162,6 +189,9 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... src/RC4.o"
+	@echo "... src/RC4.i"
+	@echo "... src/RC4.s"
 .PHONY : help
 
 
