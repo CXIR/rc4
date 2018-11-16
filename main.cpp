@@ -8,13 +8,13 @@ using namespace std;
 
 int main() {
 
-    string content;
-    string key;
+    string content = "";
+    string key = "";
 
     cout << "texte en clair " << endl;
     cin >> content;
 
-    cout << "entrer la clé" << endl;
+    cout << "entrer la cle" << endl;
     cin >> key;
 
     RC4 rc4(content, key);

@@ -16,16 +16,16 @@ class RC4 {
 
 private:
     int mod = 256;
-    string key = nullptr;
-    string content = nullptr;
-    char S[256];
+    string key;
+    string content;
+    unsigned char S[256];
 
 public:
     string getKey();
     void setKey(string key);
     void ksa();
     string prga();
-    void swap(int a, int b);
+    void swap(unsigned int a, unsigned int b);
     string compute();
 
     RC4(string content, string key);
