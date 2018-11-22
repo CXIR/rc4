@@ -149,6 +149,33 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles\rc4.dir\build.make CMakeFiles/rc4.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+src/FileManager.obj: src/FileManager.cpp.obj
+
+.PHONY : src/FileManager.obj
+
+# target to build an object file
+src/FileManager.cpp.obj:
+	$(MAKE) -f CMakeFiles\rc4.dir\build.make CMakeFiles/rc4.dir/src/FileManager.cpp.obj
+.PHONY : src/FileManager.cpp.obj
+
+src/FileManager.i: src/FileManager.cpp.i
+
+.PHONY : src/FileManager.i
+
+# target to preprocess a source file
+src/FileManager.cpp.i:
+	$(MAKE) -f CMakeFiles\rc4.dir\build.make CMakeFiles/rc4.dir/src/FileManager.cpp.i
+.PHONY : src/FileManager.cpp.i
+
+src/FileManager.s: src/FileManager.cpp.s
+
+.PHONY : src/FileManager.s
+
+# target to generate assembly for a file
+src/FileManager.cpp.s:
+	$(MAKE) -f CMakeFiles\rc4.dir\build.make CMakeFiles/rc4.dir/src/FileManager.cpp.s
+.PHONY : src/FileManager.cpp.s
+
 src/RC4.obj: src/RC4.cpp.obj
 
 .PHONY : src/RC4.obj
@@ -188,6 +215,9 @@ help:
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
+	@echo ... src/FileManager.obj
+	@echo ... src/FileManager.i
+	@echo ... src/FileManager.s
 	@echo ... src/RC4.obj
 	@echo ... src/RC4.i
 	@echo ... src/RC4.s

@@ -6,9 +6,27 @@
 
 #IncludeRegexTransform: 
 
-D:/Documents/GitHub/rc4/src/RC4.cpp
-RC4.h
+D:/Documents/GitHub/rc4/main.cpp
+iostream
+-
+src/RC4.h
 D:/Documents/GitHub/rc4/src/RC4.h
+src/FileManager.h
+D:/Documents/GitHub/rc4/src/FileManager.h
+stdio.h
+D:/Documents/GitHub/rc4/stdio.h
+string
+-
+
+D:/Documents/GitHub/rc4/src/FileManager.h
+iostream
+-
+stdio.h
+D:/Documents/GitHub/rc4/src/stdio.h
+stdlib.h
+D:/Documents/GitHub/rc4/src/stdlib.h
+string
+-
 
 D:/Documents/GitHub/rc4/src/RC4.h
 iostream

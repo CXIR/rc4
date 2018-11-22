@@ -6,9 +6,12 @@
 
 using namespace std;
 
-RC4::RC4(string content, string key){
-    this->content = content;
+RC4::RC4(string key){
     this->key = key;
+}
+
+void RC4::setContent(string content) {
+    this->content = content;
 }
 
 string RC4::getKey() {

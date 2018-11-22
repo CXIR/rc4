@@ -28,7 +28,8 @@ public:
     void swap(unsigned int a, unsigned int b);
     string compute();
 
-    RC4(string content, string key);
+    RC4(string key);
+    void setContent(string content);
 };
 
 #endif //RC4_RC4_H
