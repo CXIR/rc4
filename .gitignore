@@ -1,0 +1,5 @@
+*.cmake
+CMakeLists.txt
+cmake-build-debug/
+*.txt___jb_tmp___
+.idea/
