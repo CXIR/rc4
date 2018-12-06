@@ -3,24 +3,15 @@
 //
 
 #include <thread>
+#include <vector>
 #include "RC4.h"
 
-using namespace std;
+RC4::RC4(std::string key, std::string content) {
 
-RC4::RC4(string key){
-    this->key = key;
-}
-
-void RC4::setContent(string content) {
-    this->content = content;
-}
-
-string RC4::getKey() {
-    return this->key;
-}
-
-void RC4::setKey(string key) {
-
+    this->key                        = key;
+    this->result                     = "";
+    this->concurrentThreadsSupported = std::thread::hardware_concurrency(); // determine max supported threads number
+    this->content                    = content;
 }
 
 void RC4::swap(unsigned int a, unsigned int b) {
@@ -30,7 +21,7 @@ void RC4::swap(unsigned int a, unsigned int b) {
     this->S[b]  = tmp;
 }
 
-void RC4::ksa() {
+void RC4::KSA() {
 
     for(int i = 0; i < this->mod; i++){
         this->S[i] = i;
@@ -46,12 +37,12 @@ void RC4::ksa() {
 
 }
 
-void RC4::compute(int min, int max, string result){
+void RC4::compute(int min, int max){
 
     int i = 0;
     int j = 0;
 
-    this->lock.lock();
+    std::lock_guard<std::mutex> guard(this->lock);
 
     for(int a = min; a < max; a++){
 
@@ -60,17 +51,48 @@ void RC4::compute(int min, int max, string result){
         swap(i, j);
 
         unsigned char k = S[(S[i] + S[j]) % this->mod] ^ this->content[a];
-        result += k;
-
+        this->result += k;
     }
-    this->lock.unlock();
+
+    //std::cout << " state of the string " << this->result << std::endl;
 }
 
-string RC4::prga() {
+std::string RC4::PRGA() {
 
-    string result = "";
     int content_length = this->content.length();
 
+    if(content_length < 255){
+        compute(0, content_length - 1);
+    }
+    else {
+
+        std::vector<std::thread> threads;
+
+        int sub_content_length = content_length / this->concurrentThreadsSupported;
+        int start_cursor       = 0;
+        int end_cursor         = sub_content_length - 1;
+
+        for (int i = 0; i < this->concurrentThreadsSupported; ++i) {
+
+            if( i == this->concurrentThreadsSupported-1 ){
+
+                threads.emplace_back( std::thread(&RC4::compute, this, start_cursor + sub_content_length, content_length-1 ));
+                //threads.emplace_back( std::thread([this](start_cursor + sub_content_length, content_length-1){ compute(start_cursor + sub_content_length, content_length-1); } ));
+            }
+            else {
+
+                threads.emplace_back( std::thread(&RC4::compute, this, start_cursor, end_cursor));
+            }
+            start_cursor += sub_content_length;
+            end_cursor   += sub_content_length;
+        }
+
+        std::for_each(threads.begin(), threads.end(), [](std::thread& t){
+            t.join();
+            std::cout << "thread joined" << std::endl;
+        });
+    }
+/*
     //THREAD 1
     int min1 = 0;
     int max1 = content_length/3;
@@ -83,121 +105,15 @@ string RC4::prga() {
     int min3 = max2+1;
     int max3 = content_length;
 
-    unsigned concurrentThreadsSupported = std::thread::hardware_concurrency(); // determine max threads number
-
-    cout << "Number threads supported " << concurrentThreadsSupported << endl;
-
-    /*
-    std::thread t2([]() {
-        for (int i = 0; i < 10; ++i)
-        {
-            std::cout << (i * 3) + 1 << " ";
-        }
-    });
-    std::thread t3([]() {
-        for (int i = 0; i < 10; ++i)
-        {
-            std::cout << (i * 3) + 2 << " ";
-        }
-    });
-    */
-    //t1.join();
-    //t2.join();
-    //t3.join();
-/*
-    std::thread t1( [&lock]() {
-        int i = 0;
-        int j = 0;
-
-        lock.lock();
-
-        for(int a = min1; a < max1; a++){
-
-            i = ( i + 1) % this->mod;
-            j = (j + this->S[i]) % this->mod;
-            swap(i, j);
-
-            unsigned char k = S[(S[i] + S[j]) % this->mod] ^ this->content[a];
-            result += k;
-
-        }
-        lock.unlock();
-    });
-*/
-
-/*
-    std::thread t2([&lock]() {
-        int i = 0;
-        int j = 0;
-
-        lock.lock();
-
-        for(int a = min2; a < max2; a++){
-
-            i = ( i + 1) % this->mod;
-            j = (j + this->S[i]) % this->mod;
-            swap(i, j);
-
-            unsigned char k = S[(S[i] + S[j]) % this->mod] ^ this->content[a];
-            result += k;
-
-        }
-        lock.unlock();
-    });
-*/
-
-    /*
-    std::thread t3([&lock]() {
-        int i = 0;
-        int j = 0;
-
-        lock.lock();
-
-        for(int a = min3; a < max3; a++){
-
-            i = ( i + 1) % this->mod;
-            j = (j + this->S[i]) % this->mod;
-            swap(i, j);
-
-            unsigned char k = S[(S[i] + S[j]) % this->mod] ^ this->content[a];
-            result += k;
-
-        }
-        lock.unlock();
-    });
-     */
-
-
-    std::thread t1(&RC4::compute, this, min1, max1, result);
-    std::thread t2(&RC4::compute, this, min2, max2, result);
-    std::thread t3(&RC4::compute, this, min2, max2, result);
-
+    std::thread t1(&RC4::compute, this, min1, max1);
+    std::thread t2(&RC4::compute, this, min2, max2);
+    std::thread t3(&RC4::compute, this, min3, max3);
 
     t1.join();
     t2.join();
     t3.join();
-
-
-    /*int i = 0;
-    int j = 0;
-
-    for(int a = 0; a < this->content.length(); a++){
-
-        i = ( i + 1) % this->mod;
-        j = (j + this->S[i]) % this->mod;
-        swap(i, j);
-
-        unsigned char k = S[(S[i] + S[j]) % this->mod] ^ this->content[a];
-        result += k;
-
-    }*/
-
-
+*/
     return result;
 }
-/*
-string RC4::compute(){
-    return "aaa";
-}
- */
+
 

@@ -1,51 +1,38 @@
 
 #include <iostream>
 #include "src/RC4.h"
-#include "src/FileManager.h"
+#include "src/FileIO.h"
 #include "stdio.h"
 #include <string>
 
-using namespace std;
-
 int main() {
 
-    string content = "";
-    string key = "";
-    string path = "";
-    string file_path = __FILE__;
-    string dir_path = file_path.substr(0, file_path.rfind("/"));
-    path = dir_path + "/src/file.txt";
+    std::string arg  = "";
+    std::string key  = "";
 
-    cout << "entrer la cle" << endl;
-    cin >> key;
+    std::cout << "Paki Kryption" << std::endl;
 
-    FileManager fileManager(path);
-    cout << "contenu du fichier" << endl;
+    std::cout << "Enter an argument -e (encrypt) or -d (decrypt) : " << std::endl;
+    std::cin >> arg;
 
-    content = fileManager.read();
-    cout << content << endl;
+    std::cout << "Enter the key, please :" << std::endl;
+    std::cin >> key;
 
-    RC4 rc4(key);
-    rc4.setContent(content);
-    rc4.ksa();
+    std::cout << "Thanks !" << std::endl;
 
-    cout << "cryptage en cours" << endl;
-    //fileManager.write("banana");
-    fileManager.write(rc4.prga());
+    FileIO fileIO;
 
-    cout << "contenu du fichier" << endl;
-    content = fileManager.read();
-    cout << content << endl;
+    std::string fileContent = fileIO.read("/file.rc4");
 
-    //rc4.setContent(content);
-    //rc4.ksa();
+    RC4 rc4(key, fileContent);
+    rc4.KSA();
 
-    cout << "decryptage en cours" << endl;
-    //fileManager.write(rc4.prga());
-
-    cout << "contenu du fichier" << endl;
-    content = fileManager.read();
-    cout << content << endl;
+    if( arg == "-e" ) {
+        fileIO.write("/file.rc4", rc4.PRGA());
+    }
+    else if ( arg == "-d" ) {
+        fileIO.write("/file.rc4.decrypt", rc4.PRGA());
+    }
 
     return 0;
 }

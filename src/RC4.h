@@ -10,31 +10,26 @@
 #include "stdlib.h"
 #include <string>
 
-using namespace std;
-
 class RC4 {
 
 private:
-    int mod = 256;
-    string key;
-    string content;
+    int           mod = 256;
+    std::string   key;
+    std::string   content;
     unsigned char S[256];
-    mutex lock;
+    std::mutex    lock;
+    std::string   result;
+    unsigned      concurrentThreadsSupported;
 
-    void compute(int min, int max, string result);
-    void test(int a);
+    void compute(int min, int max);
 
 public:
-    string getKey();
-    void setKey(string key);
-    void ksa();
-    string prga();
-    void swap(unsigned int a, unsigned int b);
-    //string compute();
+    void        KSA();
+    std::string PRGA();
+    void        swap( unsigned int a, unsigned int b );
 
 
-    RC4(string key);
-    void setContent(string content);
+    RC4( std::string key, std::string content );
 };
 
 #endif //RC4_RC4_H
