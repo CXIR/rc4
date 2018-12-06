@@ -1,11 +1,9 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/rc4.dir/main.cpp.obj"
-  "CMakeFiles/rc4.dir/src/RC4.cpp.obj"
-  "CMakeFiles/rc4.dir/src/FileManager.cpp.obj"
+  "CMakeFiles/rc4.dir/main.cpp.o"
+  "CMakeFiles/rc4.dir/src/RC4.cpp.o"
+  "CMakeFiles/rc4.dir/src/FileManager.cpp.o"
   "rc4.pdb"
-  "rc4.exe"
-  "rc4.exe.manifest"
-  "librc4.dll.a"
+  "rc4"
 )
 
 # Per-language clean rules from dependency scanning.

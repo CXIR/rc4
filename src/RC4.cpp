@@ -2,6 +2,7 @@
 // Created by Ludwig Roger on 15/11/2018.
 //
 
+#include <thread>
 #include "RC4.h"
 
 using namespace std;
@@ -45,6 +46,25 @@ void RC4::ksa() {
 
 }
 
+void RC4::compute(int min, int max, string result){
+
+    int i = 0;
+    int j = 0;
+
+    this->lock.lock();
+
+    for(int a = min; a < max; a++){
+
+        i = ( i + 1) % this->mod;
+        j = (j + this->S[i]) % this->mod;
+        swap(i, j);
+
+        unsigned char k = S[(S[i] + S[j]) % this->mod] ^ this->content[a];
+        result += k;
+
+    }
+    this->lock.unlock();
+}
 
 string RC4::prga() {
 
@@ -63,11 +83,34 @@ string RC4::prga() {
     int min3 = max2+1;
     int max3 = content_length;
 
-    std::mutex lock;
-    std::thread t1([&lock]() {
+    unsigned concurrentThreadsSupported = std::thread::hardware_concurrency(); // determine max threads number
+
+    cout << "Number threads supported " << concurrentThreadsSupported << endl;
+
+    /*
+    std::thread t2([]() {
+        for (int i = 0; i < 10; ++i)
+        {
+            std::cout << (i * 3) + 1 << " ";
+        }
+    });
+    std::thread t3([]() {
+        for (int i = 0; i < 10; ++i)
+        {
+            std::cout << (i * 3) + 2 << " ";
+        }
+    });
+    */
+    //t1.join();
+    //t2.join();
+    //t3.join();
+/*
+    std::thread t1( [&lock]() {
         int i = 0;
         int j = 0;
+
         lock.lock();
+
         for(int a = min1; a < max1; a++){
 
             i = ( i + 1) % this->mod;
@@ -80,10 +123,15 @@ string RC4::prga() {
         }
         lock.unlock();
     });
+*/
+
+/*
     std::thread t2([&lock]() {
         int i = 0;
         int j = 0;
+
         lock.lock();
+
         for(int a = min2; a < max2; a++){
 
             i = ( i + 1) % this->mod;
@@ -96,10 +144,15 @@ string RC4::prga() {
         }
         lock.unlock();
     });
+*/
+
+    /*
     std::thread t3([&lock]() {
         int i = 0;
         int j = 0;
+
         lock.lock();
+
         for(int a = min3; a < max3; a++){
 
             i = ( i + 1) % this->mod;
@@ -112,6 +165,14 @@ string RC4::prga() {
         }
         lock.unlock();
     });
+     */
+
+
+    std::thread t1(&RC4::compute, this, min1, max1, result);
+    std::thread t2(&RC4::compute, this, min2, max2, result);
+    std::thread t3(&RC4::compute, this, min2, max2, result);
+
+
     t1.join();
     t2.join();
     t3.join();
@@ -134,8 +195,9 @@ string RC4::prga() {
 
     return result;
 }
-
+/*
 string RC4::compute(){
     return "aaa";
 }
+ */
 

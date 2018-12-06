@@ -19,6 +19,10 @@ private:
     string key;
     string content;
     unsigned char S[256];
+    mutex lock;
+
+    void compute(int min, int max, string result);
+    void test(int a);
 
 public:
     string getKey();
@@ -26,7 +30,8 @@ public:
     void ksa();
     string prga();
     void swap(unsigned int a, unsigned int b);
-    string compute();
+    //string compute();
+
 
     RC4(string key);
     void setContent(string content);
