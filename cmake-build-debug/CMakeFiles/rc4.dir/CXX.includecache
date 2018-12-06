@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/ludwigroger/CLionProjects/rc4/src/FileManager.cpp
+fstream
+-
+codecvt
+-
+FileManager.h
+/Users/ludwigroger/CLionProjects/rc4/src/FileManager.h
+
+/Users/ludwigroger/CLionProjects/rc4/src/FileManager.h
+iostream
+-
+stdio.h
+/Users/ludwigroger/CLionProjects/rc4/src/stdio.h
+stdlib.h
+/Users/ludwigroger/CLionProjects/rc4/src/stdlib.h
+string
+-
+
