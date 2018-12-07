@@ -1,0 +1,109 @@
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/micka/Documents/rc4/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_6ff2f/fast"
+/usr/bin/make -f CMakeFiles/cmTC_6ff2f.dir/build.make CMakeFiles/cmTC_6ff2f.dir/build
+make[1] : on entre dans le répertoire « /home/micka/Documents/rc4/cmake-build-debug/CMakeFiles/CMakeTmp »
+Building C object CMakeFiles/cmTC_6ff2f.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_6ff2f.dir/CheckSymbolExists.c.o   -c /home/micka/Documents/rc4/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_6ff2f
+/snap/clion/56/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6ff2f.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_6ff2f.dir/CheckSymbolExists.c.o  -o cmTC_6ff2f 
+CMakeFiles/cmTC_6ff2f.dir/CheckSymbolExists.c.o : Dans la fonction « main » :
+CheckSymbolExists.c:(.text+0x1b) : référence indéfinie vers « pthread_create »
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_6ff2f.dir/build.make:86: recipe for target 'cmTC_6ff2f' failed
+make[1]: *** [cmTC_6ff2f] Error 1
+make[1] : on quitte le répertoire « /home/micka/Documents/rc4/cmake-build-debug/CMakeFiles/CMakeTmp »
+Makefile:121: recipe for target 'cmTC_6ff2f/fast' failed
+make: *** [cmTC_6ff2f/fast] Error 2
+
+File /home/micka/Documents/rc4/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/micka/Documents/rc4/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_a6ad6/fast"
+/usr/bin/make -f CMakeFiles/cmTC_a6ad6.dir/build.make CMakeFiles/cmTC_a6ad6.dir/build
+make[1] : on entre dans le répertoire « /home/micka/Documents/rc4/cmake-build-debug/CMakeFiles/CMakeTmp »
+Building C object CMakeFiles/cmTC_a6ad6.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_a6ad6.dir/CheckFunctionExists.c.o   -c /snap/clion/56/bin/cmake/linux/share/cmake-3.13/Modules/CheckFunctionExists.c
+Linking C executable cmTC_a6ad6
+/snap/clion/56/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a6ad6.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_a6ad6.dir/CheckFunctionExists.c.o  -o cmTC_a6ad6 -lpthreads 
+/usr/bin/ld : ne peut trouver -lpthreads
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_a6ad6.dir/build.make:86: recipe for target 'cmTC_a6ad6' failed
+make[1]: *** [cmTC_a6ad6] Error 1
+make[1] : on quitte le répertoire « /home/micka/Documents/rc4/cmake-build-debug/CMakeFiles/CMakeTmp »
+Makefile:121: recipe for target 'cmTC_a6ad6/fast' failed
+make: *** [cmTC_a6ad6/fast] Error 2
+
+
+Performing C++ SOURCE FILE Test HAVE_CXX_FLAG_WSHORTEN_64_TO_32 failed with the following output:
+Change Dir: /home/micka/Documents/rc4/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_d0e2e/fast"
+/usr/bin/make -f CMakeFiles/cmTC_d0e2e.dir/build.make CMakeFiles/cmTC_d0e2e.dir/build
+make[1]: Entering directory '/home/micka/Documents/rc4/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_d0e2e.dir/src.cxx.o
+/usr/bin/c++    -pthread  -std=c++11  -Wall  -Wextra  -Wshadow  -pedantic  -pedantic-errors -DHAVE_CXX_FLAG_WSHORTEN_64_TO_32  -Wshorten-64-to-32   -Wshorten-64-to-32 -o CMakeFiles/cmTC_d0e2e.dir/src.cxx.o -c /home/micka/Documents/rc4/cmake-build-debug/CMakeFiles/CMakeTmp/src.cxx
+c++: error: unrecognized command line option '-Wshorten-64-to-32'
+c++: error: unrecognized command line option '-Wshorten-64-to-32'
+CMakeFiles/cmTC_d0e2e.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_d0e2e.dir/src.cxx.o' failed
+make[1]: *** [CMakeFiles/cmTC_d0e2e.dir/src.cxx.o] Error 1
+make[1]: Leaving directory '/home/micka/Documents/rc4/cmake-build-debug/CMakeFiles/CMakeTmp'
+Makefile:121: recipe for target 'cmTC_d0e2e/fast' failed
+make: *** [cmTC_d0e2e/fast] Error 2
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test HAVE_CXX_FLAG_WD654 failed with the following output:
+Change Dir: /home/micka/Documents/rc4/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_5d913/fast"
+/usr/bin/make -f CMakeFiles/cmTC_5d913.dir/build.make CMakeFiles/cmTC_5d913.dir/build
+make[1]: Entering directory '/home/micka/Documents/rc4/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_5d913.dir/src.cxx.o
+/usr/bin/c++    -pthread  -std=c++11  -Wall  -Wextra  -Wshadow  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wstrict-aliasing -DHAVE_CXX_FLAG_WD654  -wd654   -wd654 -o CMakeFiles/cmTC_5d913.dir/src.cxx.o -c /home/micka/Documents/rc4/cmake-build-debug/CMakeFiles/CMakeTmp/src.cxx
+c++: error: unrecognized command line option '-wd654'
+c++: error: unrecognized command line option '-wd654'
+CMakeFiles/cmTC_5d913.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_5d913.dir/src.cxx.o' failed
+make[1]: *** [CMakeFiles/cmTC_5d913.dir/src.cxx.o] Error 1
+make[1]: Leaving directory '/home/micka/Documents/rc4/cmake-build-debug/CMakeFiles/CMakeTmp'
+Makefile:121: recipe for target 'cmTC_5d913/fast' failed
+make: *** [cmTC_5d913/fast] Error 2
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test HAVE_CXX_FLAG_WTHREAD_SAFETY failed with the following output:
+Change Dir: /home/micka/Documents/rc4/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_9c615/fast"
+/usr/bin/make -f CMakeFiles/cmTC_9c615.dir/build.make CMakeFiles/cmTC_9c615.dir/build
+make[1]: Entering directory '/home/micka/Documents/rc4/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_9c615.dir/src.cxx.o
+/usr/bin/c++    -pthread  -std=c++11  -Wall  -Wextra  -Wshadow  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wstrict-aliasing -DHAVE_CXX_FLAG_WTHREAD_SAFETY  -Wthread-safety   -Wthread-safety -o CMakeFiles/cmTC_9c615.dir/src.cxx.o -c /home/micka/Documents/rc4/cmake-build-debug/CMakeFiles/CMakeTmp/src.cxx
+c++: error: unrecognized command line option '-Wthread-safety'; did you mean '-fthread-jumps'?
+c++: error: unrecognized command line option '-Wthread-safety'; did you mean '-fthread-jumps'?
+CMakeFiles/cmTC_9c615.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_9c615.dir/src.cxx.o' failed
+make[1]: *** [CMakeFiles/cmTC_9c615.dir/src.cxx.o] Error 1
+make[1]: Leaving directory '/home/micka/Documents/rc4/cmake-build-debug/CMakeFiles/CMakeTmp'
+Makefile:121: recipe for target 'cmTC_9c615/fast' failed
+make: *** [cmTC_9c615/fast] Error 2
+
+Source file was:
+int main() { return 0; }

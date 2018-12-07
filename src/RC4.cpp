@@ -4,6 +4,8 @@
 
 #include <thread>
 #include <vector>
+#include <algorithm>
+#include <mutex>
 #include "RC4.h"
 
 RC4::RC4(std::string key, std::string content) {
@@ -76,7 +78,7 @@ std::string RC4::PRGA() {
 
             if( i == this->concurrentThreadsSupported-1 ){
 
-                threads.emplace_back( std::thread(&RC4::compute, this, start_cursor + sub_content_length, content_length-1 ));
+                //threads.emplace_back( std::thread(&RC4::compute, this, start_cursor + sub_content_length, content_length-1 ));
                 //threads.emplace_back( std::thread([this](start_cursor + sub_content_length, content_length-1){ compute(start_cursor + sub_content_length, content_length-1); } ));
             }
             else {

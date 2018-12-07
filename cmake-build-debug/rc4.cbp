@@ -5,106 +5,769 @@
 		<Option title="rc4"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="gcc"/>
-		<Option virtualFolders="CMake Files\;"/>
+		<Option virtualFolders="CMake Files\;CMake Files\lib\;CMake Files\lib\benchmark\;CMake Files\lib\benchmark\cmake\;CMake Files\lib\benchmark\src\;CMake Files\lib\gtest\;CMake Files\lib\gtest\googlemock\;CMake Files\lib\gtest\googlemock\cmake\;CMake Files\lib\gtest\googletest\;CMake Files\lib\gtest\googletest\cmake\;CMake Files\test\;CMake Files\benchmark\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/Users/ludwigroger/CLionProjects/rc4/cmake-build-debug"/>
+				<Option working_dir="/home/micka/Documents/rc4/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/ludwigroger/CLionProjects/rc4/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/ludwigroger/CLionProjects/rc4/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/ludwigroger/CLionProjects/rc4/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/ludwigroger/CLionProjects/rc4/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/micka/Documents/rc4/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/micka/Documents/rc4/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/micka/Documents/rc4/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/micka/Documents/rc4/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="rebuild_cache">
-				<Option working_dir="/Users/ludwigroger/CLionProjects/rc4/cmake-build-debug"/>
+			<Target title="install/local">
+				<Option working_dir="/home/micka/Documents/rc4/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/ludwigroger/CLionProjects/rc4/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/ludwigroger/CLionProjects/rc4/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/ludwigroger/CLionProjects/rc4/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/ludwigroger/CLionProjects/rc4/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/micka/Documents/rc4/cmake-build-debug/Makefile&quot;  VERBOSE=1 install/local"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/micka/Documents/rc4/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/micka/Documents/rc4/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/micka/Documents/rc4/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="edit_cache">
-				<Option working_dir="/Users/ludwigroger/CLionProjects/rc4/cmake-build-debug"/>
+			<Target title="test">
+				<Option working_dir="/home/micka/Documents/rc4/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/ludwigroger/CLionProjects/rc4/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/ludwigroger/CLionProjects/rc4/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/ludwigroger/CLionProjects/rc4/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/ludwigroger/CLionProjects/rc4/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/micka/Documents/rc4/cmake-build-debug/Makefile&quot;  VERBOSE=1 test"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/micka/Documents/rc4/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/micka/Documents/rc4/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/micka/Documents/rc4/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="list_install_components">
+				<Option working_dir="/home/micka/Documents/rc4/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/micka/Documents/rc4/cmake-build-debug/Makefile&quot;  VERBOSE=1 list_install_components"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/micka/Documents/rc4/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/micka/Documents/rc4/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/micka/Documents/rc4/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="install/strip">
+				<Option working_dir="/home/micka/Documents/rc4/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/micka/Documents/rc4/cmake-build-debug/Makefile&quot;  VERBOSE=1 install/strip"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/micka/Documents/rc4/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/micka/Documents/rc4/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/micka/Documents/rc4/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rc4">
-				<Option output="/Users/ludwigroger/CLionProjects/rc4/cmake-build-debug/rc4" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/ludwigroger/CLionProjects/rc4/cmake-build-debug"/>
+				<Option output="/home/micka/Documents/rc4/cmake-build-debug/rc4" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/micka/Documents/rc4/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
 					<Add directory="/usr/local/include"/>
-					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.0/include"/>
-					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
 					<Add directory="/usr/include"/>
-					<Add directory="/System/Library/Frameworks"/>
-					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/ludwigroger/CLionProjects/rc4/cmake-build-debug/Makefile&quot;  VERBOSE=1 rc4"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/ludwigroger/CLionProjects/rc4/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/ludwigroger/CLionProjects/rc4/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/ludwigroger/CLionProjects/rc4/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/micka/Documents/rc4/cmake-build-debug/Makefile&quot;  VERBOSE=1 rc4"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/micka/Documents/rc4/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/micka/Documents/rc4/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/micka/Documents/rc4/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rc4/fast">
-				<Option output="/Users/ludwigroger/CLionProjects/rc4/cmake-build-debug/rc4" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/ludwigroger/CLionProjects/rc4/cmake-build-debug"/>
+				<Option output="/home/micka/Documents/rc4/cmake-build-debug/rc4" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/micka/Documents/rc4/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
 					<Add directory="/usr/local/include"/>
-					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.0/include"/>
-					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
 					<Add directory="/usr/include"/>
-					<Add directory="/System/Library/Frameworks"/>
-					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/ludwigroger/CLionProjects/rc4/cmake-build-debug/Makefile&quot;  VERBOSE=1 rc4/fast"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/ludwigroger/CLionProjects/rc4/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/ludwigroger/CLionProjects/rc4/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/ludwigroger/CLionProjects/rc4/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/micka/Documents/rc4/cmake-build-debug/Makefile&quot;  VERBOSE=1 rc4/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/micka/Documents/rc4/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/micka/Documents/rc4/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/micka/Documents/rc4/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/micka/Documents/rc4/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/micka/Documents/rc4/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/micka/Documents/rc4/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/micka/Documents/rc4/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/micka/Documents/rc4/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/micka/Documents/rc4/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/micka/Documents/rc4/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/micka/Documents/rc4/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/micka/Documents/rc4/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/micka/Documents/rc4/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="install">
+				<Option working_dir="/home/micka/Documents/rc4/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/micka/Documents/rc4/cmake-build-debug/Makefile&quot;  VERBOSE=1 install"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/micka/Documents/rc4/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/micka/Documents/rc4/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/micka/Documents/rc4/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="gmock_main">
+				<Option output="/home/micka/Documents/rc4/cmake-build-debug/lib/libgmock_maind.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/micka/Documents/rc4/cmake-build-debug/lib/gtest/googlemock"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/micka/Documents/rc4/lib/gtest/googlemock/include"/>
+					<Add directory="/home/micka/Documents/rc4/lib/gtest/googlemock"/>
+					<Add directory="/home/micka/Documents/rc4/lib/gtest/googletest/include"/>
+					<Add directory="/home/micka/Documents/rc4/lib/gtest/googletest"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/micka/Documents/rc4/cmake-build-debug/lib/gtest/googlemock/Makefile&quot;  VERBOSE=1 gmock_main"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/micka/Documents/rc4/cmake-build-debug/lib/gtest/googlemock/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/micka/Documents/rc4/cmake-build-debug/lib/gtest/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/micka/Documents/rc4/cmake-build-debug/lib/gtest/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="gmock_main/fast">
+				<Option output="/home/micka/Documents/rc4/cmake-build-debug/lib/libgmock_maind.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/micka/Documents/rc4/cmake-build-debug/lib/gtest/googlemock"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/micka/Documents/rc4/lib/gtest/googlemock/include"/>
+					<Add directory="/home/micka/Documents/rc4/lib/gtest/googlemock"/>
+					<Add directory="/home/micka/Documents/rc4/lib/gtest/googletest/include"/>
+					<Add directory="/home/micka/Documents/rc4/lib/gtest/googletest"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/micka/Documents/rc4/cmake-build-debug/lib/gtest/googlemock/Makefile&quot;  VERBOSE=1 gmock_main/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/micka/Documents/rc4/cmake-build-debug/lib/gtest/googlemock/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/micka/Documents/rc4/cmake-build-debug/lib/gtest/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/micka/Documents/rc4/cmake-build-debug/lib/gtest/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="gmock">
+				<Option output="/home/micka/Documents/rc4/cmake-build-debug/lib/libgmockd.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/micka/Documents/rc4/cmake-build-debug/lib/gtest/googlemock"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/micka/Documents/rc4/lib/gtest/googlemock/include"/>
+					<Add directory="/home/micka/Documents/rc4/lib/gtest/googlemock"/>
+					<Add directory="/home/micka/Documents/rc4/lib/gtest/googletest/include"/>
+					<Add directory="/home/micka/Documents/rc4/lib/gtest/googletest"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/micka/Documents/rc4/cmake-build-debug/lib/gtest/googlemock/Makefile&quot;  VERBOSE=1 gmock"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/micka/Documents/rc4/cmake-build-debug/lib/gtest/googlemock/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/micka/Documents/rc4/cmake-build-debug/lib/gtest/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/micka/Documents/rc4/cmake-build-debug/lib/gtest/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="gmock/fast">
+				<Option output="/home/micka/Documents/rc4/cmake-build-debug/lib/libgmockd.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/micka/Documents/rc4/cmake-build-debug/lib/gtest/googlemock"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/micka/Documents/rc4/lib/gtest/googlemock/include"/>
+					<Add directory="/home/micka/Documents/rc4/lib/gtest/googlemock"/>
+					<Add directory="/home/micka/Documents/rc4/lib/gtest/googletest/include"/>
+					<Add directory="/home/micka/Documents/rc4/lib/gtest/googletest"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/micka/Documents/rc4/cmake-build-debug/lib/gtest/googlemock/Makefile&quot;  VERBOSE=1 gmock/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/micka/Documents/rc4/cmake-build-debug/lib/gtest/googlemock/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/micka/Documents/rc4/cmake-build-debug/lib/gtest/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/micka/Documents/rc4/cmake-build-debug/lib/gtest/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="gtest_main">
+				<Option output="/home/micka/Documents/rc4/cmake-build-debug/lib/libgtest_maind.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/micka/Documents/rc4/cmake-build-debug/lib/gtest/googlemock/gtest"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/micka/Documents/rc4/lib/gtest/googletest/include"/>
+					<Add directory="/home/micka/Documents/rc4/lib/gtest/googletest"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/micka/Documents/rc4/cmake-build-debug/lib/gtest/googlemock/gtest/Makefile&quot;  VERBOSE=1 gtest_main"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/micka/Documents/rc4/cmake-build-debug/lib/gtest/googlemock/gtest/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/micka/Documents/rc4/cmake-build-debug/lib/gtest/googlemock/gtest/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/micka/Documents/rc4/cmake-build-debug/lib/gtest/googlemock/gtest/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="gtest_main/fast">
+				<Option output="/home/micka/Documents/rc4/cmake-build-debug/lib/libgtest_maind.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/micka/Documents/rc4/cmake-build-debug/lib/gtest/googlemock/gtest"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/micka/Documents/rc4/lib/gtest/googletest/include"/>
+					<Add directory="/home/micka/Documents/rc4/lib/gtest/googletest"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/micka/Documents/rc4/cmake-build-debug/lib/gtest/googlemock/gtest/Makefile&quot;  VERBOSE=1 gtest_main/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/micka/Documents/rc4/cmake-build-debug/lib/gtest/googlemock/gtest/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/micka/Documents/rc4/cmake-build-debug/lib/gtest/googlemock/gtest/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/micka/Documents/rc4/cmake-build-debug/lib/gtest/googlemock/gtest/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="gtest">
+				<Option output="/home/micka/Documents/rc4/cmake-build-debug/lib/libgtestd.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/micka/Documents/rc4/cmake-build-debug/lib/gtest/googlemock/gtest"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/micka/Documents/rc4/lib/gtest/googletest/include"/>
+					<Add directory="/home/micka/Documents/rc4/lib/gtest/googletest"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/micka/Documents/rc4/cmake-build-debug/lib/gtest/googlemock/gtest/Makefile&quot;  VERBOSE=1 gtest"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/micka/Documents/rc4/cmake-build-debug/lib/gtest/googlemock/gtest/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/micka/Documents/rc4/cmake-build-debug/lib/gtest/googlemock/gtest/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/micka/Documents/rc4/cmake-build-debug/lib/gtest/googlemock/gtest/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="gtest/fast">
+				<Option output="/home/micka/Documents/rc4/cmake-build-debug/lib/libgtestd.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/micka/Documents/rc4/cmake-build-debug/lib/gtest/googlemock/gtest"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/micka/Documents/rc4/lib/gtest/googletest/include"/>
+					<Add directory="/home/micka/Documents/rc4/lib/gtest/googletest"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/micka/Documents/rc4/cmake-build-debug/lib/gtest/googlemock/gtest/Makefile&quot;  VERBOSE=1 gtest/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/micka/Documents/rc4/cmake-build-debug/lib/gtest/googlemock/gtest/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/micka/Documents/rc4/cmake-build-debug/lib/gtest/googlemock/gtest/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/micka/Documents/rc4/cmake-build-debug/lib/gtest/googlemock/gtest/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="test_FileIO">
+				<Option output="/home/micka/Documents/rc4/cmake-build-debug/test/test_FileIO" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/micka/Documents/rc4/cmake-build-debug/test"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/micka/Documents/rc4/lib/gtest/googletest/include"/>
+					<Add directory="/home/micka/Documents/rc4/lib/gtest/googletest"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/micka/Documents/rc4/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 test_FileIO"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/micka/Documents/rc4/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/micka/Documents/rc4/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/micka/Documents/rc4/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="test_FileIO/fast">
+				<Option output="/home/micka/Documents/rc4/cmake-build-debug/test/test_FileIO" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/micka/Documents/rc4/cmake-build-debug/test"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/micka/Documents/rc4/lib/gtest/googletest/include"/>
+					<Add directory="/home/micka/Documents/rc4/lib/gtest/googletest"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/micka/Documents/rc4/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 test_FileIO/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/micka/Documents/rc4/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/micka/Documents/rc4/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/micka/Documents/rc4/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="benchmark_main">
+				<Option output="/home/micka/Documents/rc4/cmake-build-debug/lib/benchmark/src/libbenchmark_main.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/micka/Documents/rc4/cmake-build-debug/lib/benchmark/src"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DHAVE_STD_REGEX"/>
+					<Add option="-DHAVE_POSIX_REGEX"/>
+					<Add option="-DHAVE_STEADY_CLOCK"/>
+					<Add directory="/home/micka/Documents/rc4/lib/benchmark/include"/>
+					<Add directory="/home/micka/Documents/rc4/lib/benchmark/src"/>
+					<Add directory="/home/micka/Documents/rc4/lib/benchmark/src/../include"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/micka/Documents/rc4/cmake-build-debug/lib/benchmark/src/Makefile&quot;  VERBOSE=1 benchmark_main"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/micka/Documents/rc4/cmake-build-debug/lib/benchmark/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/micka/Documents/rc4/cmake-build-debug/lib/benchmark/src/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/micka/Documents/rc4/cmake-build-debug/lib/benchmark/src/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="benchmark_main/fast">
+				<Option output="/home/micka/Documents/rc4/cmake-build-debug/lib/benchmark/src/libbenchmark_main.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/micka/Documents/rc4/cmake-build-debug/lib/benchmark/src"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DHAVE_STD_REGEX"/>
+					<Add option="-DHAVE_POSIX_REGEX"/>
+					<Add option="-DHAVE_STEADY_CLOCK"/>
+					<Add directory="/home/micka/Documents/rc4/lib/benchmark/include"/>
+					<Add directory="/home/micka/Documents/rc4/lib/benchmark/src"/>
+					<Add directory="/home/micka/Documents/rc4/lib/benchmark/src/../include"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/micka/Documents/rc4/cmake-build-debug/lib/benchmark/src/Makefile&quot;  VERBOSE=1 benchmark_main/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/micka/Documents/rc4/cmake-build-debug/lib/benchmark/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/micka/Documents/rc4/cmake-build-debug/lib/benchmark/src/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/micka/Documents/rc4/cmake-build-debug/lib/benchmark/src/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="benchmark">
+				<Option output="/home/micka/Documents/rc4/cmake-build-debug/lib/benchmark/src/libbenchmark.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/micka/Documents/rc4/cmake-build-debug/lib/benchmark/src"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DHAVE_STD_REGEX"/>
+					<Add option="-DHAVE_POSIX_REGEX"/>
+					<Add option="-DHAVE_STEADY_CLOCK"/>
+					<Add directory="/home/micka/Documents/rc4/lib/benchmark/include"/>
+					<Add directory="/home/micka/Documents/rc4/lib/benchmark/src"/>
+					<Add directory="/home/micka/Documents/rc4/lib/benchmark/src/../include"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/micka/Documents/rc4/cmake-build-debug/lib/benchmark/src/Makefile&quot;  VERBOSE=1 benchmark"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/micka/Documents/rc4/cmake-build-debug/lib/benchmark/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/micka/Documents/rc4/cmake-build-debug/lib/benchmark/src/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/micka/Documents/rc4/cmake-build-debug/lib/benchmark/src/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="benchmark/fast">
+				<Option output="/home/micka/Documents/rc4/cmake-build-debug/lib/benchmark/src/libbenchmark.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/micka/Documents/rc4/cmake-build-debug/lib/benchmark/src"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DHAVE_STD_REGEX"/>
+					<Add option="-DHAVE_POSIX_REGEX"/>
+					<Add option="-DHAVE_STEADY_CLOCK"/>
+					<Add directory="/home/micka/Documents/rc4/lib/benchmark/include"/>
+					<Add directory="/home/micka/Documents/rc4/lib/benchmark/src"/>
+					<Add directory="/home/micka/Documents/rc4/lib/benchmark/src/../include"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/micka/Documents/rc4/cmake-build-debug/lib/benchmark/src/Makefile&quot;  VERBOSE=1 benchmark/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/micka/Documents/rc4/cmake-build-debug/lib/benchmark/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/micka/Documents/rc4/cmake-build-debug/lib/benchmark/src/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/micka/Documents/rc4/cmake-build-debug/lib/benchmark/src/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="bench_my_code">
+				<Option output="/home/micka/Documents/rc4/cmake-build-debug/benchmark/bench_my_code" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/micka/Documents/rc4/cmake-build-debug/benchmark"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/micka/Documents/rc4/lib/benchmark/src/../include"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/micka/Documents/rc4/cmake-build-debug/benchmark/Makefile&quot;  VERBOSE=1 bench_my_code"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/micka/Documents/rc4/cmake-build-debug/benchmark/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/micka/Documents/rc4/cmake-build-debug/benchmark/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/micka/Documents/rc4/cmake-build-debug/benchmark/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="bench_my_code/fast">
+				<Option output="/home/micka/Documents/rc4/cmake-build-debug/benchmark/bench_my_code" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/micka/Documents/rc4/cmake-build-debug/benchmark"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/micka/Documents/rc4/lib/benchmark/src/../include"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/micka/Documents/rc4/cmake-build-debug/benchmark/Makefile&quot;  VERBOSE=1 bench_my_code/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/micka/Documents/rc4/cmake-build-debug/benchmark/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/micka/Documents/rc4/cmake-build-debug/benchmark/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/micka/Documents/rc4/cmake-build-debug/benchmark/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/ludwigroger/CLionProjects/rc4/main.cpp">
+		<Unit filename="/home/micka/Documents/rc4/benchmark/bench_main.cpp">
+			<Option target="bench_my_code"/>
+		</Unit>
+		<Unit filename="/home/micka/Documents/rc4/lib/benchmark/include/benchmark/benchmark.h">
+			<Option target="benchmark"/>
+		</Unit>
+		<Unit filename="/home/micka/Documents/rc4/lib/benchmark/src/arraysize.h">
+			<Option target="benchmark"/>
+		</Unit>
+		<Unit filename="/home/micka/Documents/rc4/lib/benchmark/src/benchmark.cc">
+			<Option target="benchmark"/>
+		</Unit>
+		<Unit filename="/home/micka/Documents/rc4/lib/benchmark/src/benchmark_api_internal.cc">
+			<Option target="benchmark"/>
+		</Unit>
+		<Unit filename="/home/micka/Documents/rc4/lib/benchmark/src/benchmark_api_internal.h">
+			<Option target="benchmark"/>
+		</Unit>
+		<Unit filename="/home/micka/Documents/rc4/lib/benchmark/src/benchmark_main.cc">
+			<Option target="benchmark_main"/>
+		</Unit>
+		<Unit filename="/home/micka/Documents/rc4/lib/benchmark/src/benchmark_register.cc">
+			<Option target="benchmark"/>
+		</Unit>
+		<Unit filename="/home/micka/Documents/rc4/lib/benchmark/src/benchmark_register.h">
+			<Option target="benchmark"/>
+		</Unit>
+		<Unit filename="/home/micka/Documents/rc4/lib/benchmark/src/benchmark_runner.cc">
+			<Option target="benchmark"/>
+		</Unit>
+		<Unit filename="/home/micka/Documents/rc4/lib/benchmark/src/benchmark_runner.h">
+			<Option target="benchmark"/>
+		</Unit>
+		<Unit filename="/home/micka/Documents/rc4/lib/benchmark/src/check.h">
+			<Option target="benchmark"/>
+		</Unit>
+		<Unit filename="/home/micka/Documents/rc4/lib/benchmark/src/colorprint.cc">
+			<Option target="benchmark"/>
+		</Unit>
+		<Unit filename="/home/micka/Documents/rc4/lib/benchmark/src/colorprint.h">
+			<Option target="benchmark"/>
+		</Unit>
+		<Unit filename="/home/micka/Documents/rc4/lib/benchmark/src/commandlineflags.cc">
+			<Option target="benchmark"/>
+		</Unit>
+		<Unit filename="/home/micka/Documents/rc4/lib/benchmark/src/commandlineflags.h">
+			<Option target="benchmark"/>
+		</Unit>
+		<Unit filename="/home/micka/Documents/rc4/lib/benchmark/src/complexity.cc">
+			<Option target="benchmark"/>
+		</Unit>
+		<Unit filename="/home/micka/Documents/rc4/lib/benchmark/src/complexity.h">
+			<Option target="benchmark"/>
+		</Unit>
+		<Unit filename="/home/micka/Documents/rc4/lib/benchmark/src/console_reporter.cc">
+			<Option target="benchmark"/>
+		</Unit>
+		<Unit filename="/home/micka/Documents/rc4/lib/benchmark/src/counter.cc">
+			<Option target="benchmark"/>
+		</Unit>
+		<Unit filename="/home/micka/Documents/rc4/lib/benchmark/src/counter.h">
+			<Option target="benchmark"/>
+		</Unit>
+		<Unit filename="/home/micka/Documents/rc4/lib/benchmark/src/csv_reporter.cc">
+			<Option target="benchmark"/>
+		</Unit>
+		<Unit filename="/home/micka/Documents/rc4/lib/benchmark/src/cycleclock.h">
+			<Option target="benchmark"/>
+		</Unit>
+		<Unit filename="/home/micka/Documents/rc4/lib/benchmark/src/internal_macros.h">
+			<Option target="benchmark"/>
+		</Unit>
+		<Unit filename="/home/micka/Documents/rc4/lib/benchmark/src/json_reporter.cc">
+			<Option target="benchmark"/>
+		</Unit>
+		<Unit filename="/home/micka/Documents/rc4/lib/benchmark/src/log.h">
+			<Option target="benchmark"/>
+		</Unit>
+		<Unit filename="/home/micka/Documents/rc4/lib/benchmark/src/mutex.h">
+			<Option target="benchmark"/>
+		</Unit>
+		<Unit filename="/home/micka/Documents/rc4/lib/benchmark/src/re.h">
+			<Option target="benchmark"/>
+		</Unit>
+		<Unit filename="/home/micka/Documents/rc4/lib/benchmark/src/reporter.cc">
+			<Option target="benchmark"/>
+		</Unit>
+		<Unit filename="/home/micka/Documents/rc4/lib/benchmark/src/sleep.cc">
+			<Option target="benchmark"/>
+		</Unit>
+		<Unit filename="/home/micka/Documents/rc4/lib/benchmark/src/sleep.h">
+			<Option target="benchmark"/>
+		</Unit>
+		<Unit filename="/home/micka/Documents/rc4/lib/benchmark/src/statistics.cc">
+			<Option target="benchmark"/>
+		</Unit>
+		<Unit filename="/home/micka/Documents/rc4/lib/benchmark/src/statistics.h">
+			<Option target="benchmark"/>
+		</Unit>
+		<Unit filename="/home/micka/Documents/rc4/lib/benchmark/src/string_util.cc">
+			<Option target="benchmark"/>
+		</Unit>
+		<Unit filename="/home/micka/Documents/rc4/lib/benchmark/src/string_util.h">
+			<Option target="benchmark"/>
+		</Unit>
+		<Unit filename="/home/micka/Documents/rc4/lib/benchmark/src/sysinfo.cc">
+			<Option target="benchmark"/>
+		</Unit>
+		<Unit filename="/home/micka/Documents/rc4/lib/benchmark/src/thread_manager.h">
+			<Option target="benchmark"/>
+		</Unit>
+		<Unit filename="/home/micka/Documents/rc4/lib/benchmark/src/thread_timer.h">
+			<Option target="benchmark"/>
+		</Unit>
+		<Unit filename="/home/micka/Documents/rc4/lib/benchmark/src/timers.cc">
+			<Option target="benchmark"/>
+		</Unit>
+		<Unit filename="/home/micka/Documents/rc4/lib/benchmark/src/timers.h">
+			<Option target="benchmark"/>
+		</Unit>
+		<Unit filename="/home/micka/Documents/rc4/lib/gtest/googlemock/src/gmock-all.cc">
+			<Option target="gmock"/>
+		</Unit>
+		<Unit filename="/home/micka/Documents/rc4/lib/gtest/googlemock/src/gmock_main.cc">
+			<Option target="gmock_main"/>
+		</Unit>
+		<Unit filename="/home/micka/Documents/rc4/lib/gtest/googletest/src/gtest-all.cc">
+			<Option target="gtest"/>
+		</Unit>
+		<Unit filename="/home/micka/Documents/rc4/lib/gtest/googletest/src/gtest_main.cc">
+			<Option target="gtest_main"/>
+		</Unit>
+		<Unit filename="/home/micka/Documents/rc4/main.cpp">
 			<Option target="rc4"/>
 		</Unit>
-		<Unit filename="/Users/ludwigroger/CLionProjects/rc4/src/FileIO.cpp">
+		<Unit filename="/home/micka/Documents/rc4/src/FileIO.cpp">
 			<Option target="rc4"/>
 		</Unit>
-		<Unit filename="/Users/ludwigroger/CLionProjects/rc4/src/FileIO.h">
+		<Unit filename="/home/micka/Documents/rc4/src/FileIO.h">
 			<Option target="rc4"/>
 		</Unit>
-		<Unit filename="/Users/ludwigroger/CLionProjects/rc4/src/FileManager.cpp">
+		<Unit filename="/home/micka/Documents/rc4/src/FileManager.cpp">
 			<Option target="rc4"/>
 		</Unit>
-		<Unit filename="/Users/ludwigroger/CLionProjects/rc4/src/FileManager.h">
+		<Unit filename="/home/micka/Documents/rc4/src/FileManager.h">
 			<Option target="rc4"/>
 		</Unit>
-		<Unit filename="/Users/ludwigroger/CLionProjects/rc4/src/RC4.cpp">
+		<Unit filename="/home/micka/Documents/rc4/src/RC4.cpp">
 			<Option target="rc4"/>
 		</Unit>
-		<Unit filename="/Users/ludwigroger/CLionProjects/rc4/src/RC4.h">
+		<Unit filename="/home/micka/Documents/rc4/src/RC4.h">
 			<Option target="rc4"/>
 		</Unit>
-		<Unit filename="/Users/ludwigroger/CLionProjects/rc4/CMakeLists.txt">
+		<Unit filename="/home/micka/Documents/rc4/test/test_main.cpp">
+			<Option target="test_FileIO"/>
+		</Unit>
+		<Unit filename="/home/micka/Documents/rc4/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/home/micka/Documents/rc4/lib/benchmark/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\lib\benchmark\"/>
+		</Unit>
+		<Unit filename="/home/micka/Documents/rc4/lib/benchmark/cmake/AddCXXCompilerFlag.cmake">
+			<Option virtualFolder="CMake Files\lib\benchmark\cmake\"/>
+		</Unit>
+		<Unit filename="/home/micka/Documents/rc4/lib/benchmark/cmake/CXXFeatureCheck.cmake">
+			<Option virtualFolder="CMake Files\lib\benchmark\cmake\"/>
+		</Unit>
+		<Unit filename="/home/micka/Documents/rc4/lib/benchmark/cmake/Config.cmake.in">
+			<Option virtualFolder="CMake Files\lib\benchmark\cmake\"/>
+		</Unit>
+		<Unit filename="/home/micka/Documents/rc4/lib/benchmark/cmake/GetGitVersion.cmake">
+			<Option virtualFolder="CMake Files\lib\benchmark\cmake\"/>
+		</Unit>
+		<Unit filename="/home/micka/Documents/rc4/lib/benchmark/cmake/benchmark.pc.in">
+			<Option virtualFolder="CMake Files\lib\benchmark\cmake\"/>
+		</Unit>
+		<Unit filename="/home/micka/Documents/rc4/lib/benchmark/src/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\lib\benchmark\src\"/>
+		</Unit>
+		<Unit filename="/home/micka/Documents/rc4/lib/gtest/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\lib\gtest\"/>
+		</Unit>
+		<Unit filename="/home/micka/Documents/rc4/lib/gtest/googlemock/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\lib\gtest\googlemock\"/>
+		</Unit>
+		<Unit filename="/home/micka/Documents/rc4/lib/gtest/googlemock/cmake/gmock.pc.in">
+			<Option virtualFolder="CMake Files\lib\gtest\googlemock\cmake\"/>
+		</Unit>
+		<Unit filename="/home/micka/Documents/rc4/lib/gtest/googlemock/cmake/gmock_main.pc.in">
+			<Option virtualFolder="CMake Files\lib\gtest\googlemock\cmake\"/>
+		</Unit>
+		<Unit filename="/home/micka/Documents/rc4/lib/gtest/googletest/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\lib\gtest\googletest\"/>
+		</Unit>
+		<Unit filename="/home/micka/Documents/rc4/lib/gtest/googletest/cmake/Config.cmake.in">
+			<Option virtualFolder="CMake Files\lib\gtest\googletest\cmake\"/>
+		</Unit>
+		<Unit filename="/home/micka/Documents/rc4/lib/gtest/googletest/cmake/gtest.pc.in">
+			<Option virtualFolder="CMake Files\lib\gtest\googletest\cmake\"/>
+		</Unit>
+		<Unit filename="/home/micka/Documents/rc4/lib/gtest/googletest/cmake/gtest_main.pc.in">
+			<Option virtualFolder="CMake Files\lib\gtest\googletest\cmake\"/>
+		</Unit>
+		<Unit filename="/home/micka/Documents/rc4/lib/gtest/googletest/cmake/internal_utils.cmake">
+			<Option virtualFolder="CMake Files\lib\gtest\googletest\cmake\"/>
+		</Unit>
+		<Unit filename="/home/micka/Documents/rc4/test/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\test\"/>
+		</Unit>
+		<Unit filename="/home/micka/Documents/rc4/benchmark/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\benchmark\"/>
 		</Unit>
 	</Project>
 </CodeBlocks_project_file>

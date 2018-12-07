@@ -4,12 +4,12 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/ludwigroger/CLionProjects/rc4/main.cpp" "/Users/ludwigroger/CLionProjects/rc4/cmake-build-debug/CMakeFiles/rc4.dir/main.cpp.o"
-  "/Users/ludwigroger/CLionProjects/rc4/src/FileIO.cpp" "/Users/ludwigroger/CLionProjects/rc4/cmake-build-debug/CMakeFiles/rc4.dir/src/FileIO.cpp.o"
-  "/Users/ludwigroger/CLionProjects/rc4/src/FileManager.cpp" "/Users/ludwigroger/CLionProjects/rc4/cmake-build-debug/CMakeFiles/rc4.dir/src/FileManager.cpp.o"
-  "/Users/ludwigroger/CLionProjects/rc4/src/RC4.cpp" "/Users/ludwigroger/CLionProjects/rc4/cmake-build-debug/CMakeFiles/rc4.dir/src/RC4.cpp.o"
+  "/home/micka/Documents/rc4/main.cpp" "/home/micka/Documents/rc4/cmake-build-debug/CMakeFiles/rc4.dir/main.cpp.o"
+  "/home/micka/Documents/rc4/src/FileIO.cpp" "/home/micka/Documents/rc4/cmake-build-debug/CMakeFiles/rc4.dir/src/FileIO.cpp.o"
+  "/home/micka/Documents/rc4/src/FileManager.cpp" "/home/micka/Documents/rc4/cmake-build-debug/CMakeFiles/rc4.dir/src/FileManager.cpp.o"
+  "/home/micka/Documents/rc4/src/RC4.cpp" "/home/micka/Documents/rc4/cmake-build-debug/CMakeFiles/rc4.dir/src/RC4.cpp.o"
   )
-set(CMAKE_CXX_COMPILER_ID "AppleClang")
+set(CMAKE_CXX_COMPILER_ID "GNU")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
