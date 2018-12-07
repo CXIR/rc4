@@ -6,13 +6,29 @@
 
 #IncludeRegexTransform: 
 
-/Users/ludwigroger/CLionProjects/rc4/src/RC4.cpp
-thread
+/Users/ludwigroger/CLionProjects/rc4/main.cpp
+iostream
 -
-vector
--
-RC4.h
+src/RC4.h
 /Users/ludwigroger/CLionProjects/rc4/src/RC4.h
+src/FileIO.h
+/Users/ludwigroger/CLionProjects/rc4/src/FileIO.h
+stdio.h
+/Users/ludwigroger/CLionProjects/rc4/stdio.h
+string
+-
+
+/Users/ludwigroger/CLionProjects/rc4/src/FileIO.h
+iostream
+-
+string
+-
+fstream
+-
+stdio.h
+/Users/ludwigroger/CLionProjects/rc4/src/stdio.h
+stdlib.h
+/Users/ludwigroger/CLionProjects/rc4/src/stdlib.h
 
 /Users/ludwigroger/CLionProjects/rc4/src/RC4.h
 iostream

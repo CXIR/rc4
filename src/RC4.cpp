@@ -12,6 +12,8 @@ RC4::RC4(std::string key, std::string content) {
     this->result                     = "";
     this->concurrentThreadsSupported = std::thread::hardware_concurrency(); // determine max supported threads number
     this->content                    = content;
+
+    this->test = new unsigned char[this->content.length()];
 }
 
 void RC4::swap(unsigned int a, unsigned int b) {
@@ -39,6 +41,8 @@ void RC4::KSA() {
 
 void RC4::compute(int min, int max){
 
+    std::string treatment = this->content.substr(min, max);
+
     int i = 0;
     int j = 0;
 
@@ -51,69 +55,49 @@ void RC4::compute(int min, int max){
         swap(i, j);
 
         unsigned char k = S[(S[i] + S[j]) % this->mod] ^ this->content[a];
+
+        this->test[a] = k;
         this->result += k;
     }
 
-    //std::cout << " state of the string " << this->result << std::endl;
 }
 
 std::string RC4::PRGA() {
 
     int content_length = this->content.length();
 
-    if(content_length < 255){
-        compute(0, content_length - 1);
-    }
-    else {
+    if (content_length < 255) {
+
+        compute(0, content_length);
+
+    } else {
 
         std::vector<std::thread> threads;
 
         int sub_content_length = content_length / this->concurrentThreadsSupported;
-        int start_cursor       = 0;
-        int end_cursor         = sub_content_length - 1;
+        int start_cursor = 0;
+        int end_cursor = sub_content_length;
 
         for (int i = 0; i < this->concurrentThreadsSupported; ++i) {
 
-            if( i == this->concurrentThreadsSupported-1 ){
+            if (i == this->concurrentThreadsSupported - 1) {
 
-                threads.emplace_back( std::thread(&RC4::compute, this, start_cursor + sub_content_length, content_length-1 ));
-                //threads.emplace_back( std::thread([this](start_cursor + sub_content_length, content_length-1){ compute(start_cursor + sub_content_length, content_length-1); } ));
+                end_cursor = content_length;
             }
-            else {
 
-                threads.emplace_back( std::thread(&RC4::compute, this, start_cursor, end_cursor));
-            }
+            threads.emplace_back( std::thread( &RC4::compute, this, start_cursor, end_cursor ));
+
             start_cursor += sub_content_length;
             end_cursor   += sub_content_length;
         }
 
-        std::for_each(threads.begin(), threads.end(), [](std::thread& t){
+        std::for_each(threads.begin(), threads.end(), [](std::thread &t) {
             t.join();
-            std::cout << "thread joined" << std::endl;
         });
+
+        std::cout << " test : " << test << std::endl;
+
+        return result;
     }
-/*
-    //THREAD 1
-    int min1 = 0;
-    int max1 = content_length/3;
 
-    //THREAD 2
-    int min2 = max1+1;
-    int max2 = (content_length/3)*2;
-
-    //THREAD 3
-    int min3 = max2+1;
-    int max3 = content_length;
-
-    std::thread t1(&RC4::compute, this, min1, max1);
-    std::thread t2(&RC4::compute, this, min2, max2);
-    std::thread t3(&RC4::compute, this, min3, max3);
-
-    t1.join();
-    t2.join();
-    t3.join();
-*/
-    return result;
 }
-
-

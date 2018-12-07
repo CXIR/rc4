@@ -20,6 +20,7 @@ private:
     std::mutex    lock;
     std::string   result;
     unsigned      concurrentThreadsSupported;
+    unsigned char* test;
 
     void compute(int min, int max);
 
