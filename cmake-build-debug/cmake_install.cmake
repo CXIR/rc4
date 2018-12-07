@@ -1,8 +1,8 @@
-# Install script for directory: D:/Documents/GitHub/rc4
+# Install script for directory: D:/MesProjets/GitHubProjects/rc4
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/rc4")
+  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/my_project")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -27,9 +27,13 @@ if(NOT CMAKE_INSTALL_COMPONENT)
   endif()
 endif()
 
-# Is this installation the result of a crosscompile?
-if(NOT DEFINED CMAKE_CROSSCOMPILING)
-  set(CMAKE_CROSSCOMPILING "FALSE")
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for each subdirectory.
+  include("D:/MesProjets/GitHubProjects/rc4/cmake-build-debug/lib/gtest/cmake_install.cmake")
+  include("D:/MesProjets/GitHubProjects/rc4/cmake-build-debug/test/cmake_install.cmake")
+  include("D:/MesProjets/GitHubProjects/rc4/cmake-build-debug/lib/benchmark/cmake_install.cmake")
+  include("D:/MesProjets/GitHubProjects/rc4/cmake-build-debug/benchmark/cmake_install.cmake")
+
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -40,5 +44,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "D:/Documents/GitHub/rc4/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "D:/MesProjets/GitHubProjects/rc4/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

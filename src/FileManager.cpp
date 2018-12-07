@@ -10,13 +10,18 @@ FileManager::FileManager(string path) {
 }
 
 string FileManager::read() {
+
     ifstream readFile;
     string text;
     string line;
+
     readFile.open(path, ios::binary);
+
     if(readFile.is_open()) {
-        while(!readFile.eof()) {
-            getline(readFile, line);
+
+        while( !readFile.eof() ) {
+
+            std::getline(readFile, line);
             text.append(line);
         }
     }
@@ -33,7 +38,7 @@ string FileManager::read() {
 
 void FileManager::write(string text) {
     ofstream writeFile;
-    writeFile.open(path, ios::binary);
+    writeFile.open("/src/crypted.txt", ios::binary);
     if(writeFile.is_open()) {
         writeFile << text;
     }
