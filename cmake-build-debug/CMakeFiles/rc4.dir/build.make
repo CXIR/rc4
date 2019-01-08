@@ -83,22 +83,9 @@ CMakeFiles/rc4.dir/src/RC4.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rc4.dir/src/RC4.cpp.s"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/ludwigroger/CLionProjects/rc4/src/RC4.cpp -o CMakeFiles/rc4.dir/src/RC4.cpp.s
 
-CMakeFiles/rc4.dir/src/FileManager.cpp.o: CMakeFiles/rc4.dir/flags.make
-CMakeFiles/rc4.dir/src/FileManager.cpp.o: ../src/FileManager.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ludwigroger/CLionProjects/rc4/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/rc4.dir/src/FileManager.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rc4.dir/src/FileManager.cpp.o -c /Users/ludwigroger/CLionProjects/rc4/src/FileManager.cpp
-
-CMakeFiles/rc4.dir/src/FileManager.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rc4.dir/src/FileManager.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/ludwigroger/CLionProjects/rc4/src/FileManager.cpp > CMakeFiles/rc4.dir/src/FileManager.cpp.i
-
-CMakeFiles/rc4.dir/src/FileManager.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rc4.dir/src/FileManager.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/ludwigroger/CLionProjects/rc4/src/FileManager.cpp -o CMakeFiles/rc4.dir/src/FileManager.cpp.s
-
 CMakeFiles/rc4.dir/src/FileIO.cpp.o: CMakeFiles/rc4.dir/flags.make
 CMakeFiles/rc4.dir/src/FileIO.cpp.o: ../src/FileIO.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ludwigroger/CLionProjects/rc4/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/rc4.dir/src/FileIO.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ludwigroger/CLionProjects/rc4/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/rc4.dir/src/FileIO.cpp.o"
 	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rc4.dir/src/FileIO.cpp.o -c /Users/ludwigroger/CLionProjects/rc4/src/FileIO.cpp
 
 CMakeFiles/rc4.dir/src/FileIO.cpp.i: cmake_force
@@ -109,20 +96,33 @@ CMakeFiles/rc4.dir/src/FileIO.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rc4.dir/src/FileIO.cpp.s"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/ludwigroger/CLionProjects/rc4/src/FileIO.cpp -o CMakeFiles/rc4.dir/src/FileIO.cpp.s
 
+CMakeFiles/rc4.dir/test.cpp.o: CMakeFiles/rc4.dir/flags.make
+CMakeFiles/rc4.dir/test.cpp.o: ../test.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ludwigroger/CLionProjects/rc4/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/rc4.dir/test.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rc4.dir/test.cpp.o -c /Users/ludwigroger/CLionProjects/rc4/test.cpp
+
+CMakeFiles/rc4.dir/test.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rc4.dir/test.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/ludwigroger/CLionProjects/rc4/test.cpp > CMakeFiles/rc4.dir/test.cpp.i
+
+CMakeFiles/rc4.dir/test.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rc4.dir/test.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/ludwigroger/CLionProjects/rc4/test.cpp -o CMakeFiles/rc4.dir/test.cpp.s
+
 # Object files for target rc4
 rc4_OBJECTS = \
 "CMakeFiles/rc4.dir/main.cpp.o" \
 "CMakeFiles/rc4.dir/src/RC4.cpp.o" \
-"CMakeFiles/rc4.dir/src/FileManager.cpp.o" \
-"CMakeFiles/rc4.dir/src/FileIO.cpp.o"
+"CMakeFiles/rc4.dir/src/FileIO.cpp.o" \
+"CMakeFiles/rc4.dir/test.cpp.o"
 
 # External object files for target rc4
 rc4_EXTERNAL_OBJECTS =
 
 rc4: CMakeFiles/rc4.dir/main.cpp.o
 rc4: CMakeFiles/rc4.dir/src/RC4.cpp.o
-rc4: CMakeFiles/rc4.dir/src/FileManager.cpp.o
 rc4: CMakeFiles/rc4.dir/src/FileIO.cpp.o
+rc4: CMakeFiles/rc4.dir/test.cpp.o
 rc4: CMakeFiles/rc4.dir/build.make
 rc4: CMakeFiles/rc4.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/ludwigroger/CLionProjects/rc4/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable rc4"

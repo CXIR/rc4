@@ -17,6 +17,12 @@ stdio.h
 /Users/ludwigroger/CLionProjects/rc4/stdio.h
 string
 -
+cctype
+-
+
+/Users/ludwigroger/CLionProjects/rc4/src/FileIO.cpp
+FileIO.h
+/Users/ludwigroger/CLionProjects/rc4/src/FileIO.h
 
 /Users/ludwigroger/CLionProjects/rc4/src/FileIO.h
 iostream
@@ -39,4 +45,14 @@ stdlib.h
 /Users/ludwigroger/CLionProjects/rc4/src/stdlib.h
 string
 -
+
+/Users/ludwigroger/CLionProjects/rc4/test.cpp
+string
+-
+iostream
+-
+src/FileIO.h
+/Users/ludwigroger/CLionProjects/rc4/src/FileIO.h
+src/RC4.h
+/Users/ludwigroger/CLionProjects/rc4/src/RC4.h
 

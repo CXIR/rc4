@@ -177,33 +177,6 @@ src/FileIO.cpp.s:
 	$(MAKE) -f CMakeFiles/rc4.dir/build.make CMakeFiles/rc4.dir/src/FileIO.cpp.s
 .PHONY : src/FileIO.cpp.s
 
-src/FileManager.o: src/FileManager.cpp.o
-
-.PHONY : src/FileManager.o
-
-# target to build an object file
-src/FileManager.cpp.o:
-	$(MAKE) -f CMakeFiles/rc4.dir/build.make CMakeFiles/rc4.dir/src/FileManager.cpp.o
-.PHONY : src/FileManager.cpp.o
-
-src/FileManager.i: src/FileManager.cpp.i
-
-.PHONY : src/FileManager.i
-
-# target to preprocess a source file
-src/FileManager.cpp.i:
-	$(MAKE) -f CMakeFiles/rc4.dir/build.make CMakeFiles/rc4.dir/src/FileManager.cpp.i
-.PHONY : src/FileManager.cpp.i
-
-src/FileManager.s: src/FileManager.cpp.s
-
-.PHONY : src/FileManager.s
-
-# target to generate assembly for a file
-src/FileManager.cpp.s:
-	$(MAKE) -f CMakeFiles/rc4.dir/build.make CMakeFiles/rc4.dir/src/FileManager.cpp.s
-.PHONY : src/FileManager.cpp.s
-
 src/RC4.o: src/RC4.cpp.o
 
 .PHONY : src/RC4.o
@@ -231,6 +204,33 @@ src/RC4.cpp.s:
 	$(MAKE) -f CMakeFiles/rc4.dir/build.make CMakeFiles/rc4.dir/src/RC4.cpp.s
 .PHONY : src/RC4.cpp.s
 
+test.o: test.cpp.o
+
+.PHONY : test.o
+
+# target to build an object file
+test.cpp.o:
+	$(MAKE) -f CMakeFiles/rc4.dir/build.make CMakeFiles/rc4.dir/test.cpp.o
+.PHONY : test.cpp.o
+
+test.i: test.cpp.i
+
+.PHONY : test.i
+
+# target to preprocess a source file
+test.cpp.i:
+	$(MAKE) -f CMakeFiles/rc4.dir/build.make CMakeFiles/rc4.dir/test.cpp.i
+.PHONY : test.cpp.i
+
+test.s: test.cpp.s
+
+.PHONY : test.s
+
+# target to generate assembly for a file
+test.cpp.s:
+	$(MAKE) -f CMakeFiles/rc4.dir/build.make CMakeFiles/rc4.dir/test.cpp.s
+.PHONY : test.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -246,12 +246,12 @@ help:
 	@echo "... src/FileIO.o"
 	@echo "... src/FileIO.i"
 	@echo "... src/FileIO.s"
-	@echo "... src/FileManager.o"
-	@echo "... src/FileManager.i"
-	@echo "... src/FileManager.s"
 	@echo "... src/RC4.o"
 	@echo "... src/RC4.i"
 	@echo "... src/RC4.s"
+	@echo "... test.o"
+	@echo "... test.i"
+	@echo "... test.s"
 .PHONY : help
 
 

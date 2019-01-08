@@ -91,16 +91,13 @@
 		<Unit filename="/Users/ludwigroger/CLionProjects/rc4/src/FileIO.h">
 			<Option target="rc4"/>
 		</Unit>
-		<Unit filename="/Users/ludwigroger/CLionProjects/rc4/src/FileManager.cpp">
-			<Option target="rc4"/>
-		</Unit>
-		<Unit filename="/Users/ludwigroger/CLionProjects/rc4/src/FileManager.h">
-			<Option target="rc4"/>
-		</Unit>
 		<Unit filename="/Users/ludwigroger/CLionProjects/rc4/src/RC4.cpp">
 			<Option target="rc4"/>
 		</Unit>
 		<Unit filename="/Users/ludwigroger/CLionProjects/rc4/src/RC4.h">
+			<Option target="rc4"/>
+		</Unit>
+		<Unit filename="/Users/ludwigroger/CLionProjects/rc4/test.cpp">
 			<Option target="rc4"/>
 		</Unit>
 		<Unit filename="/Users/ludwigroger/CLionProjects/rc4/CMakeLists.txt">

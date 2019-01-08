@@ -8,9 +8,10 @@ CMakeFiles/rc4.dir/main.cpp.o
 CMakeFiles/rc4.dir/src/FileIO.cpp.o
  /Users/ludwigroger/CLionProjects/rc4/src/FileIO.cpp
  /Users/ludwigroger/CLionProjects/rc4/src/FileIO.h
-CMakeFiles/rc4.dir/src/FileManager.cpp.o
- /Users/ludwigroger/CLionProjects/rc4/src/FileManager.cpp
- /Users/ludwigroger/CLionProjects/rc4/src/FileManager.h
 CMakeFiles/rc4.dir/src/RC4.cpp.o
  /Users/ludwigroger/CLionProjects/rc4/src/RC4.cpp
  /Users/ludwigroger/CLionProjects/rc4/src/RC4.h
+CMakeFiles/rc4.dir/test.cpp.o
+ /Users/ludwigroger/CLionProjects/rc4/src/FileIO.h
+ /Users/ludwigroger/CLionProjects/rc4/src/RC4.h
+ /Users/ludwigroger/CLionProjects/rc4/test.cpp

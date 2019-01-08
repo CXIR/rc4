@@ -15,14 +15,15 @@
 
 class FileIO {
 
-private:
-    std::string base_path;
+    private:
+        std::string base_path;
 
-public:
-    FileIO();
+    public:
+        FileIO();
 
-    std::string read(  std::string path );
-    int         write( std::string path, std::string text);
+        std::string read(  std::string path );
+        int         write( std::string path, std::string text);
+        int         test(  std::string path);
 };
 
 #endif //RC4_FILEIO_H
