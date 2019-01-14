@@ -2,7 +2,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/rc4.dir/main.cpp.o"
   "CMakeFiles/rc4.dir/src/RC4.cpp.o"
   "CMakeFiles/rc4.dir/src/FileIO.cpp.o"
-  "CMakeFiles/rc4.dir/test.cpp.o"
   "rc4.pdb"
   "rc4"
 )

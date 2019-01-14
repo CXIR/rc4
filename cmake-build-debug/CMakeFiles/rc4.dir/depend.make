@@ -11,7 +11,3 @@ CMakeFiles/rc4.dir/src/FileIO.cpp.o: ../src/FileIO.h
 CMakeFiles/rc4.dir/src/RC4.cpp.o: ../src/RC4.cpp
 CMakeFiles/rc4.dir/src/RC4.cpp.o: ../src/RC4.h
 
-CMakeFiles/rc4.dir/test.cpp.o: ../src/FileIO.h
-CMakeFiles/rc4.dir/test.cpp.o: ../src/RC4.h
-CMakeFiles/rc4.dir/test.cpp.o: ../test.cpp
-

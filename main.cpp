@@ -50,8 +50,6 @@ int main (int argc, char** argv) {
             FileIO fileIO;
             int numberOfThreadsSelected = (int) strtol(argv[2], &pEnd, 10);
 
-            std::cout << "threads" << numberOfThreadsSelected << std::endl;
-
             if(fileIO.test(fileSource) == -1){
 
                 std::cout << "We failed in opening your file :/ \n" << std::endl;
