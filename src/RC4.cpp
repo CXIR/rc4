@@ -4,6 +4,7 @@
 
 #include <thread>
 #include <vector>
+#include <algorithm>
 #include "RC4.h"
 
 RC4::RC4 (std::string key, std::string content, int threads) {
@@ -18,8 +19,6 @@ RC4::RC4 (std::string key, std::string content, int threads) {
     else {
         this->concurrentThreadsSupported = threads;
     }
-
-    this->test = new unsigned char[this->content.length()];
 }
 
 void RC4::swap (unsigned int a, unsigned int b) {
@@ -63,7 +62,7 @@ void RC4::compute (int min, int max) {
 
         unsigned char k = S[(S[i] + S[j]) % this->mod] ^ this->content[a];
 
-        this->test[a] = k;
+        //this->test[a] = k;
         this->result += k;
     }
 }
@@ -96,4 +95,8 @@ std::string RC4::PRGA () {
         });
     }
     return result;
+}
+
+RC4::~RC4() {
+
 }

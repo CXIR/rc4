@@ -1,1 +1,1 @@
-/Library/Developer/CommandLineTools/usr/bin/c++  -g -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/rc4.dir/main.cpp.o CMakeFiles/rc4.dir/src/RC4.cpp.o CMakeFiles/rc4.dir/src/FileIO.cpp.o  -o rc4 
+/Library/Developer/CommandLineTools/usr/bin/c++  -pthread -g -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/rc4.dir/main.cpp.o CMakeFiles/rc4.dir/src/RC4.cpp.o CMakeFiles/rc4.dir/src/FileIO.cpp.o  -o rc4 

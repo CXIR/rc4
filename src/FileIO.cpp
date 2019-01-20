@@ -29,7 +29,7 @@ std::string FileIO::read (std::string path) {
     std::string   content = "";
     std::ifstream inputFileStream;
 
-    inputFileStream.open( formatted_path, std::ios::in|  std::ios::binary );
+    inputFileStream.open( formatted_path, std::ios::in | std::ios::binary );
 
     if (inputFileStream.is_open()) {
 
@@ -60,4 +60,8 @@ int FileIO::write (std::string path, std::string text) {
     outputFileStream.close();
 
     return executed;
+}
+
+FileIO::~FileIO() {
+
 }

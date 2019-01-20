@@ -9,6 +9,7 @@
 #include "stdio.h"
 #include "stdlib.h"
 #include <string>
+#include <mutex>
 
 class RC4 {
 
@@ -20,7 +21,6 @@ private:
     std::mutex     lock;
     std::string    result;
     int            concurrentThreadsSupported;
-    unsigned char* test;
 
     void compute(int min, int max);
 
@@ -31,6 +31,7 @@ public:
 
 
     RC4( std::string key, std::string content, int threads);
+    ~RC4();
 };
 
 #endif //RC4_RC4_H

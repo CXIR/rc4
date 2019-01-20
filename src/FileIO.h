@@ -24,6 +24,8 @@ class FileIO {
         std::string read(  std::string path );
         int         write( std::string path, std::string text);
         int         test(  std::string path);
+
+        ~FileIO();
 };
 
 #endif //RC4_FILEIO_H
