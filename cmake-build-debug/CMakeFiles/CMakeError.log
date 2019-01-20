@@ -1,0 +1,14 @@
+Performing C++ SOURCE FILE Test HAVE_CXX_FLAG_WD654 failed with the following output:
+Change Dir: /Users/ludwigroger/CLionProjects/rc4/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_98f1e/fast"
+/Library/Developer/CommandLineTools/usr/bin/make -f CMakeFiles/cmTC_98f1e.dir/build.make CMakeFiles/cmTC_98f1e.dir/build
+Building CXX object CMakeFiles/cmTC_98f1e.dir/src.cxx.o
+/Library/Developer/CommandLineTools/usr/bin/c++    -pthread  -std=c++11  -Wall  -Wextra  -Wshadow  -pedantic  -pedantic-errors  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations  -Wstrict-aliasing -DHAVE_CXX_FLAG_WD654  -wd654   -wd654 -o CMakeFiles/cmTC_98f1e.dir/src.cxx.o -c /Users/ludwigroger/CLionProjects/rc4/cmake-build-debug/CMakeFiles/CMakeTmp/src.cxx
+clang: error: unknown argument: '-wd654'
+clang: error: unknown argument: '-wd654'
+make[2]: *** [CMakeFiles/cmTC_98f1e.dir/src.cxx.o] Error 1
+make[1]: *** [cmTC_98f1e/fast] Error 2
+
+Source file was:
+int main() { return 0; }
