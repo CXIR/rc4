@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/ludwigroger/CLionProjects/rc4/src/FileIO.cpp
+FileIO.h
+/Users/ludwigroger/CLionProjects/rc4/src/FileIO.h
+
+/Users/ludwigroger/CLionProjects/rc4/src/FileIO.h
+iostream
+-
+string
+-
+fstream
+-
+stdio.h
+/Users/ludwigroger/CLionProjects/rc4/src/stdio.h
+stdlib.h
+/Users/ludwigroger/CLionProjects/rc4/src/stdlib.h
+

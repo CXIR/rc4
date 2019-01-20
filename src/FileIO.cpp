@@ -7,7 +7,12 @@
 FileIO::FileIO() {
 
     std::string file_path = __FILE__;
-    this->base_path       = file_path.substr(0, file_path.rfind("/")) + "/";
+
+    // Please uncomment this line for tests
+    //this->base_path       = file_path.substr(0, file_path.rfind("/")) + "/";
+
+    // please uncomment this line for release
+    this->base_path       = "";
 }
 
 int FileIO::test (std::string path) {
@@ -46,7 +51,7 @@ std::string FileIO::read (std::string path) {
 
 int FileIO::write (std::string path, std::string text) {
 
-    std::string   formatted_path = this->base_path + path;
+    std::string   formatted_path =  this->base_path + path;
     int           executed       = -1;
     std::ofstream outputFileStream;
 
